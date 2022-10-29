@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+<div class = "Factorial">
+  <h1>Assignment 3 - Factorial, Sum and Average of First N Natural Numbers</h1>
+  <div class = "Factorial for N">
+    <!-- factorial of N -->
+    <div class = "Factorial">
+      <h2>Factorial of N Numbers</h2>
+      <p>
+        <h>Input a value of N</h>
+        <input id= "num">
+        <button onclick="factorialsss()">Solve</button>
+        <p>
+        The factorial of N is:<span id="fact"></span>
+      </p>
+    </div>
+
+    <!-- sum of N -->
+    <div class = "Sum of N">
+      <h2>Sum of the First N Numbers</h2>
+      <p>
+        <label>Input a value of n</label>
+        <input id="num1">
+        <button onclick="sumwa()">Solve</button>
+      </p>
+      <p>The sum is: <span id="sum"></span></p>
+  </div>
+
+  <!-- average of N -->
+  <div class="Average of N">
+    <h2>Average of the First N Numbers</h2>
+    <p>
+      <label>Input a value of n</label>
+      <input id="num2">
+      <button onclick="AverageJonas()">Solve</button> 
+      </p>
+      <p>The average is:<span id="sum2"></span>
+    </p>
+</div>
+
+</body>
+<script>
+  function factorialsss()
+  {
+  var n = document.getElementById("num").value;
+  var i=1, f=1; 
+  while(n>=i){
+    f *= i;
+    i++
+  }
+  document.getElementById("fact").innerHTML = f;
+  }
+  function sumwa()
+  {
+  var n = document.getElementById("num1").value;
+  var i=1, f=0;
+  do{
+    f += i;
+    i++
+  }while(n >= i)
+  document.getElementById("sum").innerHTML = f;
+  }
+  function AverageJonas()
+  {
+    var x = document.getElementById("num2").value;
+      let nth = 0;
+
+      for(let i = 1; i < x; i++){
+        nth += i;
+      }
+      let sum2 = nth/x
+      document.getElementById("sum2").innerHTML = sum2;
+  }
+</script>
+  <li><a href="./homepage.html">Home</a></li> <html>
+</html>
