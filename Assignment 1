@@ -1,0 +1,69 @@
+!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+<h1>Assignment 1 - Conversion (°C to °F, °F to °Cs, m to ft, ft to m)</h1>
+<h2>Fahrenheit to Celsius</h2>
+<p>
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+    oninput="TemperatureConverter1(this.value)"
+    onchange="TemperatureConverter1(this.value)">
+  </p>
+  <p>Celsius: <span id="outputCelsius"></span></p>
+<script>
+    function TemperatureConverter1(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelsius").innerHTML = (valNum- 32) *5/9;
+}
+</script>
+<h2>Celsius to Fahrenheit</h2>
+<p>
+    <label>Celsius</label>
+    <input id="inputCelsius" type="number" placeholder="Celsius" 
+    oninput="TemperatureConverter0(this.value)" 
+    onchange="TemperatureConverter0(this.value)">
+  </p>
+  <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+<script>
+    function TemperatureConverter0(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=(valNum* 9/5) + 32;
+}
+</script>
+<h2>Meters to Feet </h2>
+<!-- Meters to Feet -->
+<p>
+    <label>Meters</label>
+    <input id="inputMeters" type="number" placeholder="Meters" 
+    oninput="LengthConverter0(this.value)" 
+    onchange="LengthConverter0(this.value)">
+  </p>
+  <p>Feet: <span id="outputFeet"></span></p>
+<script>
+    function LengthConverter0(valNum) {
+  document.getElementById("outputFeet").innerHTML=(valNum* 3.28084);
+}
+</script>
+<h2>Feet to Meters </h2>
+<!-- Feet to Meters -->
+<p>
+    <label>Feet</label>
+    <input id="inputFeet" type="number" placeholder="Feet" 
+    oninput="LengthConverter1(this.value)" 
+    onchange="LengthConverter1(this.value)">
+  </p>
+  <p>Meters: <span id="outputMeters"></span></p>
+<script>
+    function LengthConverter1(valNum) {
+  document.getElementById("outputMeters").innerHTML=(valNum/3.2808);
+}
+</script>
+  <li><a href="./homepage.html">Home</a></li> <html>
+</html>
+</body>
+<h
